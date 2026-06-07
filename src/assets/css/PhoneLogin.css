@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --blue: #1a73e8;
+  --border: #dadce0;
+}
+
+body {
+  background: #ffffff;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 448px;
+  min-height: 420px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 48px 40px 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 75px;
+  margin: 0 auto;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-top: 20px;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-top: 10px;
+  margin-bottom: 32px;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.phone-input {
+  width: 100%;
+  height: 55px;
+  padding: 0 15px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.phone-input:focus {
+  border: 2px solid var(--blue);
+}
+
+.phone-input::placeholder {
+  color: #80868b;
+}
+
+.card p {
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.card p a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card-bottom {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-bottom a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-bottom button {
+  background: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 26px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card-bottom button:hover {
+  background: #1558b0;
+}
+
+.footer {
+  width: 448px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.footer select {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-span span {
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+    border: none;
+    padding: 24px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .footer-span span {
+    margin-left: 12px;
+  }
+}

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+:root {
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --blue: #1a73e8;
+  --border: #dadce0;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.card {
+  width: 448px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 48px 40px 36px;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 75px;
+  margin: 0 auto;
+}
+.card h2 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+.otp-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.otp-input {
+  width: 48px;
+  height: 56px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 24px;
+  outline: none;
+  transition: 0.2s;
+}
+.otp-input:focus {
+  border: 2px solid var(--blue);
+}
+.card p {
+  margin-top: 30px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-align: center;
+}
+.card p a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+.card-bottom {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-bottom a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 500;
+}
+.card-bottom button {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 26px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.card-bottom button:hover {
+  background: #1558b0;
+}
+.footer {
+  width: 448px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+.footer select {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.footer-span span {
+  margin-left: 24px;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+    border: none;
+    padding: 24px;
+  }
+  .footer {
+    width: 100%;
+    padding: 0 24px;
+  }
+  .otp-input {
+    width: 42px;
+    height: 52px;
+  }
+}
