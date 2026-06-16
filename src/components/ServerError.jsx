@@ -9,7 +9,7 @@ const ServerError = () => {
     <div className="container">
       <div className="card error-card">
         <img
-          src="../src/assets/google-logo.svg"
+          src="https://static.vecteezy.com/system/resources/thumbnails/022/484/503/small/google-lens-icon-logo-symbol-free-png.png"
           alt="Google Logo"
           className="logo"
         />
